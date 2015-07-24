@@ -1,0 +1,24 @@
+{
+    "name": "ecomdev/magento-translate-tool",
+    "description": "Magento translation tool that utilizes PHP Tokenizer in order to generate csv files from PHP, XML, PHTML code",
+    "type": "library",
+    "require": {
+        "symfony/console": "^2.7",
+        "funivan/php-tokenizer": "^0.1.0",
+        "psr/log": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.7"
+    },
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Ivan Chepurnyi",
+            "email": "ivan.chepurnyi@ecomdev.org"
+        }
+    ],
+    "minimum-stability": "beta",
+    "config": {
+        "bin-dir": "bin"
+    }
+}

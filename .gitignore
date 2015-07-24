@@ -1,0 +1,7 @@
+bin/*
+!bin/mage-translate-tool
+!bin/mage2-translate-tool
+vendor/*
+.idea/*
+.DS_Store
+
