@@ -4,11 +4,19 @@
     "type": "library",
     "require": {
         "symfony/console": "^2.7",
-        "funivan/php-tokenizer": "^0.1.0",
-        "psr/log": "^1.0"
+        "funivan/php-tokenizer": "dev-master",
+        "psr/log": "^1.0",
+        "league/csv": "^7.1.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.7"
+        "phpunit/phpunit": "^4.7",
+        "mikey179/vfsStream": "^1.5"
+    },
+    "autoload": {
+        "psr-4": { "EcomDev\\TranslateTool\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "EcomDev\\TranslateToolTest\\": "tests/" }
     },
     "license": "OSL-3.0",
     "authors": [
