@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+use EcomDev\TranslateTool\Command\MagentoOne\PhpScan;
+use EcomDev\TranslateTool\Command\MagentoOne\CsvCompare;
+use EcomDev\TranslateTool\Command\MagentoOne\CsvExport;
+use EcomDev\TranslateTool\Command\MagentoOne\CsvMissing;
+use \EcomDev\TranslateTool\Command\MagentoOne\CsvCompareExported;
+
+$application = new Application('Magento 1.x Translation Tool', '1.0');
+$application->add(new PhpScan());
+$application->add(new CsvCompare());
+$application->add(new CsvExport());
+$application->add(new CsvMissing());
+$application->add(new CsvCompareExported());
+$application->run();
